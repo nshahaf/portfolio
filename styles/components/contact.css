@@ -30,6 +30,10 @@ form#form{
 .form-message {
   min-height: 100px;
 }
+
+#result{
+  color: var(--clr-slate600);
+}
 .contact__btn {
   font-size: var(--size-sm);
 }
