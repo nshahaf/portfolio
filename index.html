@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <meta name="description" content="My Portfolio website" />
+    <meta name="keywords" content="web design, html, css, js" />
+    <title>Portfolio Website</title>
+  </head>
+  <body>
+    <header class="header container">
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="header__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+          <li class="header__line"></li>
+          <li>
+            <button
+              aria-label="theme-toggle btn"
+              id="theme-toggle"
+              class="header__sun"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+          </li>
+        </ul>
+        <button aria-label="mobile nav button" class="header__bars">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a class="mobile-nav__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#contact">Contact</a>
+          </li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button
+              aria-label="theme-toggle btn"
+              id="theme-toggle"
+              class="mobile-nav__sun"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+          </li>
+          <!-- <li>
+            <a class="mobile-nav__btn btn" href="#">Resume</a>
+          </li> -->
+        </ul>
+      </nav>
+    </div>
+    <!-- End of Mobile Navigation -->
+    <main>
+      <section class="hero container">
+        <!-- update Img -->
+        <img class="hero__img" src="/hero.jpg" alt="Profile picture" />
+        <h2 class="hero__subtitle">Shahaf Noked</h2>
+        <h1 class="hero__title">
+          FRONT-END <br />
+          WEB DEVELOPER.
+        </h1>
+        <p class="hero__description">
+          A passionate <strong>Frontend / Fullstack </strong> web developer and
+          <strong>UX/UI</strong>
+          enthusiast specialized in building pixel-perfect interactive
+          websites/applications.
+        </p>
+        
+        <a class="hero__btn btn" href="#contact">Reach out</a>
+      </section>
+      <section id="about" class="about container section">
+        <div class="about__content">
+          <h2 class="about__title">About</h2>
+          <p class="about__description">
+            Hi, I'm Shahaf, a <strong>Frontend / Fullstack</strong> web
+            developer based in Tel Aviv. I’m passionate about crafting
+            innovative web solutions and enjoy diving into new technologies to
+            keep my skills sharp. Whether I'm designing user-friendly interfaces
+            or developing complex backend systems, I love the challenge and
+            creativity that come with building things from scratch. My drive to
+            learn and grow in this ever-evolving field keeps me excited and
+            motivated every day.
+          </p>
+          <hr class="about__hr" />
+          <h3 class="about__subtitle">Technologies</h3>
+          <div class="about__ul-container">
+            <ul class="about__ul">
+              <li class="about__list"><i class="fa-brands fa-js"></i> JavaScript (ES6+)</li>
+              <li class="about__list"><i class="fa-brands fa-css3-alt"></i> CSS / SCSS</li>
+              <li class="about__list"><i class="fa-brands fa-html5"></i> HTML</li>
+            </ul>
+            <ul class="about__ul">
+              <li class="about__list"> <i class="fa-brands fa-react"></i> React</li>
+              <li class="about__list"><i class="fa-brands fa-node-js"></i> NodeJS / Express</li>
+              <li class="about__list"><i class="fa-brands fa-vuejs"></i> Vue</li>
+            </ul>
+          </div>
+        </div>
+        <!-- <div class="about__img-wrapper">
+          <img
+            class="about__img lazy loading"
+            src="https://via.placeholder.com/720"
+            data-src="/about.jpg"
+            alt="Profile picture"
+          />
+        </div> -->
+      </section>
+      <section id="featured" class="featured container section">
+        <h3 class="featured__subtitle">Featured project</h3>
+        <div class="featured__wrapper">
+          <h2 class="featured__title">Groovify - a spotify clone</h2>
+          <a
+            aria-label="link featured projects"
+            class="featured__link"
+            href="https://groovify-5azh.onrender.com/"
+            target="_blank"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
+              />
+            </svg>
+          </a>
+        </div>
+        <p class="featured__description">
+          Groovify is a sleek Spotify clone that replicates the user experience
+          of streaming your favorite music, complete with personalized playlists
+          and intuitive navigation.
+        </p>
+
+        <p class="featured__description">
+          Built with modern web technologies, Groovify showcases my skills in
+          frontend and backend development, offering a seamless and engaging
+          music streaming experience. This project demonstrates my ability to
+          create a fully functional music application, integrating real-time
+          features and a clean, user-friendly interface.
+        </p>
+        <div class="featured__info-container">
+          <div>
+            <h3 class="featured__label">Tech stack</h3>
+            <ul class="featured__tech-stack">
+              <li class="featured__info">ReactJS</li>
+              <li class="featured__info">MongoDB</li>
+              <li class="featured__info">NodeJS</li>
+              <li class="featured__info">Express</li>
+              <li class="featured__info">Redux</li>
+              <li class="featured__info">Axios</li>
+              <li class="featured__info">restAPI</li>
+              <li class="featured__info">Cloudinary</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="featured__label">Project type</h3>
+            <p class="featured__info">Fullstack - MERN</p>
+          </div>
+          <div>
+            <h3 class="featured__label">Timeline</h3>
+            <p class="featured__info">July 2024 - August 2024</p>
+          </div>
+        </div>
+        <div class="featured__img-container">
+          <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+              src="https://placehold.co/1920x951"
+              data-src="/homePage.png"
+              alt="Groovify Home page"
+            />
+          </div>
+          <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+              src="https://placehold.co/1920x951"
+              data-src="/playlistPage.png"
+              alt="Groovify playlist page"
+            />
+          </div>
+          <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+              src="https://placehold.co/1920x951"
+              data-src="/artistPage.png"
+              alt="Groovify artist page"
+            />
+          </div>
+          <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+              src="https://placehold.co/1920x951"
+              data-src="/searchPage.png"
+              alt="Groovify search page"
+            />
+          </div>
+          <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+              src="https://placehold.co/1920x951"
+              data-src="/playlistSearch.png"
+              alt="Groovify playlist search page"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="work container section">
+        <h2 class="work__title">Projects</h2>
+        <p class="work__description">
+          Below, you'll find a selection of projects that showcase my skills and
+          expertise. Explore these examples to get a sense of my work.
+        </p>
+        <div class="work__container">
+
+          <!-- Project 1 -->
+          <h3 class="work__project-title">AppSus</h3>
+          <div class="work__img-wrapper work__image1">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/1920x952"
+              data-src="/AppSus-notes.png"
+              alt="AppSus website"
+            />
+          </div>
+          <div class="work__project work__content1">
+            <h3 class="work__project-subtitle">Notes app</h3>
+            <p class="work__project-description1">
+              This React project is a part of a team project that merge a mail
+              and notes application into a single app named AppSus.
+            </p>
+            <!-- <p class="work__project-description2">
+              Ea ut non cupidatat consequat sint elit ipsum culpa dolor cillum
+              commodo. Do esse excepteur cillum deserunt duis incididunt. Eu
+              tempor ullamco aliqua consectetur incididunt anim dolor sunt
+              laboris adipisicing cupidatat sint.
+            </p> -->
+            <a
+              class="btn work__project-btn"
+              href="https://jonathandolan1.github.io/react-hooks-starter/#/note"
+              target="_blank"
+              >Website</a
+            >
+          </div>
+
+          <!-- Project 2 -->
+          <h3 class="work__project-title">Desserts</h3>
+          <div class="work__img-wrapper work__image2">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/1920x952"
+              data-src="/desserts.png"
+              alt="desserts website"
+            />
+          </div>
+          <div class="work__project work__content2">
+            <h3 class="work__project-subtitle">Dessert cart</h3>
+            <p class="work__project-description1">
+              This Vue project is a dessert shopping cart page that utilizes
+              Pinia for state management and includes a simple Express server.
+            </p>
+            <!-- <p class="work__project-description2">
+              Elit est amet quis incididunt officia velit eiusmod do amet. Sint
+              non qui nulla sit ex cillum non pariatur velit proident ut aliqua
+              fugiat incididunt id minim.
+            </p> -->
+            <a class="btn work__project-btn" href="https://desserts-backend.onrender.com/" target="_blank">Website</a>
+          </div>
+
+          <!-- Project 3 -->
+          <h3 class="work__project-title">MemeGen</h3>
+          <div class="work__img-wrapper work__image3">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/1920x952"
+              data-src="/memeGen.png"
+              alt="Meme generator app"
+            />
+          </div>
+          <div class="work__project work__content3">
+            <h3 class="work__project-subtitle">Meme Generator</h3>
+            <p class="work__project-description1">
+              Meme generator application with a gallery and text editor written
+              in Vanilla JavaScript, HTML & CSS
+            </p>
+            <!-- <p class="work__project-description3">
+              Mollit ipsum mollit magna occaecat eiusmod sint fugiat est non
+              adipisicing esse fugiat deserunt minim. Enim occaecat velit eu non
+              amet nostrud officia duis.
+            </p> -->
+            <a
+              class="btn work__project-btn"
+              href="https://nshahaf.github.io/memeGen/"
+              target="_blank"
+              >Website</a
+            >
+          </div>
+          
+          <!-- Project 4 -->
+          <h3 class="work__project-title">Minesweeper</h3>
+          <div class="work__img-wrapper work__image4">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/1920x952"
+              data-src="/mineSweeper.png"
+              alt="mineSweeper game website"
+            />
+          </div>
+          <div class="work__project work__content4">
+            <h3 class="work__project-subtitle">Minesweeper game</h3>
+            <p class="work__project-description1">
+              This project features a classic Vanilla Minesweeper game that
+              includes several enhanced functionalities: a life count system,
+              hint options, and a leaderboard to track high scores.
+            </p>
+            <!-- <p class="work__project-description2">
+              Ea ut non cupidatat consequat sint elit ipsum culpa dolor cillum
+              commodo. Do esse excepteur cillum deserunt duis incididunt. Eu
+              tempor ullamco aliqua consectetur incididunt anim dolor sunt
+              laboris adipisicing cupidatat sint.
+            </p> -->
+            <a class="btn work__project-btn" href="https://nshahaf.github.io/mineSweeper-game/" target="_blank">Website</a>
+          </div>
+      </section>
+      <section id="contact" class="contact container section">
+        <h2 class="contact__title">Get In Contact</h2>
+        <p class="contact__description">
+          Whether you have a business inquiry or simply want to say hello, my inbox is always open. Feel free to reach out, and I'll get back to you as soon as possible.
+        </p>
+
+        <form method="POST" id="form">
+
+          <input type="hidden" name="access_key" value=%VITE_FORM_ACCESS_KEY%>
+      
+          <input type="text" name="name" class="form-name" placeholder="Name" required>
+          <input type="email" name="email" class="form-email" placeholder="Email address" required>
+          <textarea name="message" class="form-message" placeholder="Message" required></textarea>
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+      
+          <button type="submit" class="contact__btn btn">Submit Form</button>
+      
+          <div id="result"></div>
+      
+      </form>
+      </section>
+
+     
+    </main>
+    <footer class="footer container section">
+      <h3 class="footer__title">~ Shahaf Noked ~</h3>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
