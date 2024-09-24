@@ -1,3 +1,6 @@
+.footer.container.section {
+  margin-block:2rem;
+}
 .footer__title {
   font-size: var(--size-xs);
   font-weight: 400;
@@ -6,5 +9,4 @@
   text-transform: uppercase;
   letter-spacing: 0.2em;
   user-select: none;
-  padding-bottom: 20px;
 }
